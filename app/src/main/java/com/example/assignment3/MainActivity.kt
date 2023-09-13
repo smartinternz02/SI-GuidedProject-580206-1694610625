@@ -120,7 +120,7 @@ fun MyAppContent(){
             Image(
                 painter = painterResource(id = R.drawable.amazon),
                 contentDescription = "null",
-                modifier = Modifier.width(150.dp) // Set the desired width here
+                modifier = Modifier.width(150.dp)
             )
             Button(
                 onClick = {
@@ -140,7 +140,7 @@ fun MyAppContent(){
             Image(
                 painter = painterResource(id = R.drawable.flipkart),
                 contentDescription = "null",
-                modifier = Modifier.width(150.dp) // Set the desired width here
+                modifier = Modifier.width(150.dp)
             )
             Button(
                 onClick = {
@@ -159,7 +159,7 @@ fun MyAppContent(){
             Image(
                 painter = painterResource(id = R.drawable.myntra),
                 contentDescription = "null",
-                modifier = Modifier.width(150.dp) // Set the desired width here
+                modifier = Modifier.width(150.dp)
             )
             Button(
                 onClick = {
