@@ -49,7 +49,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-
+import com.example.assignment3.R
 
 
 class MainActivity : ComponentActivity() {
@@ -73,7 +73,7 @@ fun MyAppContent(){
 
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp).background(color = Color.LightGray),
+            .padding(16.dp).background(color = Color.White  ),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
