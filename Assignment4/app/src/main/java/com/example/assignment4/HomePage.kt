@@ -30,23 +30,55 @@ fun HomePage(navController: NavController) {
             fontSize = 48.sp, color = Color.hsl(270F, 0.90F, 0.50F))
 
         Spacer(modifier = Modifier.height(10.dp))
-        val myImgList = listOf(
+        val restaurantImageSet1 = listOf(
+            R.drawable.restaurant_image_1,
+            R.drawable.restaurant_image_6,
+            R.drawable.restaurant_image_7,
+            R.drawable.restaurant_image_8,
+            R.drawable.restaurant_image_4,
+        )
+        val restaurantImageSet2 = listOf(
             R.drawable.restaurant_image_5,
             R.drawable.restaurant_image_6,
             R.drawable.restaurant_image_7,
             R.drawable.restaurant_image_8,
             R.drawable.restaurant_image_4,
         )
+        val restaurantImageSet3 = listOf(
+            R.drawable.restaurant_image_5,
+            R.drawable.restaurant_image_6,
+            R.drawable.restaurant_image_7,
+            R.drawable.restaurant_image_8,
+            R.drawable.restaurant_image_4,
+        )
+        val restaurantImageSet4 = listOf(
+            R.drawable.restaurant_image_5,
+            R.drawable.restaurant_image_6,
+            R.drawable.restaurant_image_7,
+            R.drawable.restaurant_image_8,
+            R.drawable.restaurant_image_4,
+        )
+
+        val restrImgData = listOf(restaurantImageSet1,restaurantImageSet2,restaurantImageSet3,restaurantImageSet4)
+        val cuisines = listOf<String>("Indian","Italian","Chinese","Continental")
+        val endTimes = listOf<String>("11:15","10:30","11:59","10:45")
+        val isOpens = listOf(true,false,true,true)
+        val ratings = listOf(5f,4f,3f,2f,4f)
+        val names  = listOf<String>("Hotel HindMata"," Hotel Olivia","Panda Express","Coup De Gras")
+        val reviews = listOf(12870,4305,659,8132)
+        val startTime = listOf<String>("07:30","08:15","08:00","11:45")
         LazyColumn(){
             items(5){
-                index ->  RestaurantCard(cuisine = "Indian",
-                endTime = "11:30",
-                imageList = myImgList,
-                isOpen = false,
-                rating = 4f,
-                RestaurantName = "The Taj",
-                reviews = 985,
-                startTime = "08:30", navController = navController)
+                index ->  RestaurantCard(
+                cuisine = cuisines[index],
+                endTime = endTimes[index],
+                imageList = restrImgData[index],
+                isOpen = isOpens[index],
+                rating = ratings[index],
+                RestaurantName = names[index],
+                reviews = reviews[index],
+                startTime = startTime[index] ,
+                navController = navController)
             }
         }
 
