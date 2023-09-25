@@ -68,7 +68,7 @@ fun HomePage(navController: NavController) {
         val reviews = listOf(12870,4305,659,8132)
         val startTime = listOf<String>("07:30","08:15","08:00","11:45")
         LazyColumn(){
-            items(5){
+            items(3){
                 index ->  RestaurantCard(
                 cuisine = cuisines[index],
                 endTime = endTimes[index],
